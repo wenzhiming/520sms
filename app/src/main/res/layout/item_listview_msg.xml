@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dip" >
+
+    <CheckBox
+        android:id="@+id/cb_conversation_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:button="@drawable/common_checkbox_background" />
+
+    <ImageView
+        android:id="@+id/iv_conversation_item_icon"
+        android:layout_width="52dip"
+        android:layout_height="52dip"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/cb_conversation_item" />
+
+    <TextView
+        android:id="@+id/tv_conversation_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_conversation_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_toLeftOf="@id/tv_conversation_item_date"
+        android:layout_toRightOf="@id/iv_conversation_item_icon"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_conversation_item_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_conversation_item_name"
+        android:layout_below="@id/tv_conversation_item_name"
+        android:layout_marginTop="5dip"
+        android:singleLine="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+</RelativeLayout>
